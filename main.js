@@ -1,14 +1,33 @@
 
-function summation(arr){
-    let sum = 0;
+//  DOM manipulations
+// 1. Selecting Element
+    // getElementsById -- fast / rarely used
+    const title = document.getElementById('main-heading');
+    console.log(title);
+    //getElementsByClassName
+    // const country = document.getElementsByClassName("country");
+    // console.log(country);
+    //getElementsByTagName
+    const tag = document.getElementsByTagName("input");
+    console.log(tag);
+    //querySelector
+    // * Used most of the cases
+    const country = document.querySelector(".country");
+    console.log(country);
 
-    for( let index = 0;  index < arr.length ; index++){
-        sum += arr[index];
-    }
-    return sum;
-}
+        //querySelectorAll
+    const countryAll = document.querySelectorAll(".country");
+    console.log(countryAll);
 
-const arr = new Array(12, 13, 33, 55, 1, 6, );
 
-const totalSum = summation(arr)
-console.log(totalSum);
+
+
+
+
+// 2. Styling Element
+// 3. Creating Element
+// 4. Node traversals
+// 5. Event Handlers
+
+
+
