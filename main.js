@@ -34,13 +34,13 @@
 // title.textContent= "All Country List"
 
 
-const countries = document.querySelectorAll(".country");
+// const countries = document.querySelectorAll(".country");
 
-for(let i = 0; i < countries.length; i++){
-    countries[i].style.color = "orange";
-    countries[i].style.fontSize = "2rem";
+// for(let i = 0; i < countries.length; i++){
+//     countries[i].style.color = "orange";
+//     countries[i].style.fontSize = "2rem";
     
-}
+// }
 // console.log(countries);
 
 // 3. Creating Element
@@ -85,7 +85,7 @@ const container = document.querySelector(".container")
 // console.log(h1);
 
 // 4. Node traversals
-const ul = document.querySelector('ul');
+// const ul = document.querySelector('ul');
 // console.log(ul.parentElement);
 // console.log(ul.parentNode);
 // console.log(ul.childNodes);
@@ -95,7 +95,7 @@ const ul = document.querySelector('ul');
 // console.log(ul.firstElementChild);
 // console.log(ul.lastElementChild);
 
-console.log(ul);
+// console.log(ul);
 
 // const h1 = document.querySelector("h1");
 // console.log(h1.previousSibling);
@@ -104,6 +104,23 @@ console.log(ul);
 // console.log(h1.nextElementSibling);
 
 // 5. Event Handlers
+const btn = document.querySelector(".btn");
+const input = document.querySelector("input");
+const ul = document.querySelector("ul")
 
+
+// addEventListener(event typeof, callback function){
+    
+// }
+
+btn.addEventListener("click", function(){
+    const li = document.querySelector("li");
+    li.classList.add("country");
+    li.textContent = input.value;
+    
+    ul.append(li);
+    input.value = "";
+
+})
 
 
