@@ -44,18 +44,18 @@ for(let i = 0; i < countries.length; i++){
 // console.log(countries);
 
 // 3. Creating Element
-const ul = document.querySelector("ul");
-const li = document.createElement("li");
-li.textContent = "Hello";
-// li.setAttribute("class", "country");
-li.classList.add('country');
-li.setAttribute("style", "color: orange;font-size: 2rem;");
-//append
-// ul.append(li)
-// ul.appendChild(li)
-ul.insertAdjacentElement("beforeend",li)
+// const ul = document.querySelector("ul");
+// const li = document.createElement("li");
+// li.textContent = "Hello";
+// // li.setAttribute("class", "country");
+// li.classList.add('country');
+// li.setAttribute("style", "color: orange;font-size: 2rem;");
+// //append
+// // ul.append(li)
+// // ul.appendChild(li)
+// ul.insertAdjacentElement("beforeend",li)
 
-console.log(ul.innerHTML);
+// console.log(ul.innerHTML);
 
 
 const container = document.querySelector(".container")
@@ -74,17 +74,34 @@ const container = document.querySelector(".container")
 
 // console.log(container.innerHTML);
 
-const h1 = document.querySelector("#main-heading");
-let screen = "768px";
-if(screen === "768px") h1.classList.toggle("mobile")
-if(h1.classList.contains("mobile")) screen = "460px"
+// const h1 = document.querySelector("#main-heading");
+// let screen = "768px";
+// if(screen === "768px") h1.classList.toggle("mobile")
+// if(h1.classList.contains("mobile")) screen = "460px"
 
-console.log(screen);
+// console.log(screen);
 
 
-console.log(h1);
+// console.log(h1);
 
 // 4. Node traversals
+const ul = document.querySelector('ul');
+// console.log(ul.parentElement);
+// console.log(ul.parentNode);
+// console.log(ul.childNodes);
+// console.log(ul.children);
+// console.log(ul.firstChild);
+// console.log(ul.lastChild);
+// console.log(ul.firstElementChild);
+// console.log(ul.lastElementChild);
+
+console.log(ul);
+
+// const h1 = document.querySelector("h1");
+// console.log(h1.previousSibling);
+// console.log(h1.previousElementSibling);
+// console.log(h1.nextSibling);
+// console.log(h1.nextElementSibling);
 
 // 5. Event Handlers
 
